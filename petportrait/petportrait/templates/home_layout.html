@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load compress %}
+{% load promotion_tags %}
+{% block layout %}
+{% include "partials/nav_accounts.html" %}
+    <!--Main heading !-->
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3>Commission a painting of your best friend</h3>
+                    <h1>Coming, Fall 2015</h1>
+
+                </div>
+
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /headerwrap -->
+    <!--How it works !-->
+     <div id="service">
+        <div class="container">
+            <div class="row centered">
+                <h2>How it works</h2>
+                <div class="col-md-4">
+                    <i class="fa fa-heart-o"></i>
+                    <h4>Browse the artists</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-flask"></i>
+                    <h4>Select a style and size</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-trophy"></i>
+                    <h4>Upload your picture and send along some details</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+                </div>                      
+            </div>
+        </div><! --/container -->
+     </div><! --/service -->
+
+    <!-- *****************************************************************************************************************
+     TESTIMONIALS
+     ***************************************************************************************************************** -->
+     <div id="twrap">
+        <div class="container centered">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                <i class="fa fa-comment-o"></i>
+                <p>Some text</p>
+                <h4><br/>Will Sankey</h4>
+                <p>Will Sankey</p>
+                </div>
+            </div><! --/row -->
+        </div><! --/container -->
+     </div><! --/twrap --
+
+
+{% include "partials/footer.html" %}
+{% endblock %}
+{% block extrascripts %}
+    {% include "partials/extrascripts.html" %}
+    {{ block.super }}
+{% endblock %}
